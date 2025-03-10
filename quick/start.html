@@ -7,17 +7,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
-        <meta name="author" content="miniphper">
+        <meta name="author" content="DeekeScript">
         
         
     
     <link rel="stylesheet" href="../gitbook/style.css">
 
     
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-gtalk/gtalk.css">
-                
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
@@ -69,15 +65,7 @@
 
     
         
-    
-        
-    
-        
-    
-        
-    
-        
-    
+        <link rel="stylesheet" href="../main.css">
         
     
 
@@ -498,7 +486,7 @@
                 <a href="../advance/thread.html">
             
                     
-                    多线程
+                    多线程-Thread
             
                 </a>
             
@@ -589,7 +577,84 @@
                 <a href="../backendApi/activationCode.html">
             
                     
-                    激活码
+                    后端接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <span>
+            
+                    
+                    代码安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../code/encryption.html">
+            
+                <a href="../code/encryption.html">
+            
+                    
+                    代码混淆加密
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
+                <span>
+            
+                    
+                    Apk打包与云市场
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../apk/apk.html">
+            
+                <a href="../apk/apk.html">
+            
+                    
+                    在线打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.2" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html">
+            
+                    
+                    管理后台支持
             
                 </a>
             
@@ -614,71 +679,6 @@
                 <span>
             
                     
-                    Apk打包与云市场
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="5.1.1" data-path="../apk/apk.html">
-            
-                <a href="../apk/apk.html">
-            
-                    
-                    在线打包
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.1.2" data-path="../backend/backend.html">
-            
-                <a href="../backend/backend.html">
-            
-                    
-                    管理后台支持
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.1.3" data-path="../cloud/cloud.html">
-            
-                <a href="../cloud/cloud.html">
-            
-                    
-                    DeekeScript云市场
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-
-    
-        
-        <li class="divider"></li>
-        
-        
-    
-        <li class="chapter " data-level="6.1" >
-            
-                <span>
-            
-                    
                     经典案例篇
             
                 </span>
@@ -688,7 +688,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="6.1.1" data-path="../deeke/deeke.html">
+        <li class="chapter " data-level="5.1.1" data-path="../deeke/deeke.html">
             
                 <a href="../deeke/deeke.html">
             
@@ -713,7 +713,7 @@
         
         
     
-        <li class="chapter " data-level="7.1" >
+        <li class="chapter " data-level="6.1" >
             
                 <span>
             
@@ -727,7 +727,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.1.1" data-path="../question/question.html">
+        <li class="chapter " data-level="6.1.1" data-path="../question/question.html">
             
                 <a href="../question/question.html">
             
@@ -740,7 +740,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.2" data-path="../question/accessibility.html">
+        <li class="chapter " data-level="6.1.2" data-path="../question/accessibility.html">
             
                 <a href="../question/accessibility.html">
             
@@ -765,7 +765,7 @@
         
         
     
-        <li class="chapter " data-level="8.1" data-path="../INVITE.html">
+        <li class="chapter " data-level="7.1" data-path="../INVITE.html">
             
                 <a href="../INVITE.html">
             
@@ -824,31 +824,95 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="快速开始">快速开始</h1>
-<h2 id="创建你的第一个javascript功能脚本">创建你的第一个JavaScript功能脚本</h2>
+<p>目前DeekeScript支持JavaScript和Typescript开发（推荐）。</p>
 <ul>
-<li><p>通过git获取基础代码</p>
+<li>Typescript方式支持DeekeScript代码提示（提升编写速度）</li>
+<li>Typescript有着更加严格的类型控制（降低代码错误，增加代码可读性，降低代码维护成本）</li>
+<li>Typescript编译成JavaScript之后可以混淆代码（增加安全性）</li>
+</ul>
+<p><strong>😄 使用Typescript方式，但用JavaScript编码风格来编写代码，这样既有代码提示，又可以降低代码复杂度</strong></p>
 <blockquote>
-<p>git clone <a href="https://github.com/DeekeScript/deekeScriptDemo.git" target="_blank">https://github.com/DeekeScript/deekeScriptDemo.git</a> ./</p>
+<p>接下来分别介绍JavaScript和Typescript方式如何创建项目</p>
 </blockquote>
+<h2 id="准备工作">准备工作</h2>
+<ul>
+<li><a href="https://code.visualstudio.com/" target="_blank">下载vscode</a></li>
+<li><p>在Vscode中安装DeekeScript开发插件，如下图，点击“安装”即可
+<img src="../assets/extension.png" width="100%"> </p>
 </li>
-<li><p>打开Vscode代码编辑器，并且将刚刚克隆的项目打开</p>
+<li><p>在手机上<a target="_blank" href="../assets/deekeScript_v1.00.03-release.apk">下载安装DeekeScript软件包</a></p>
 </li>
-<li><p>在Vscode中<a href="../config/vscode.html">安装DeekeScript开发插件</a></p>
+<li>打开DeekeScript的侧边栏（左上角“三条杠”），开启“无障碍”、“悬浮窗”、“开启服务”</li>
+</ul>
+<h2 id="控件查看器">控件查看器</h2>
+<blockquote>
+<p>节点查看器主要用于查看手机界面上的“控件”信息，使用节点信息来查找你需要的“控件”，然后对控件进行点击或者输入以及滑动等操作</p>
+</blockquote>
+<ul>
+<li><p>打开手机端的DeekeScript，如下图，可以看到手机的局域网IP是“192.168.1.3”：</p>
+<p><img src="../assets/dk.jpg" width="20%"></p>
 </li>
-<li><p>在手机上<a href="../apk.apk">下载安装DeekeScript软件包</a></p>
+<li><p>打开浏览器，输入：&quot;<a href="http://192.168.1.3:8080&quot;，可以看到下面的页面" target="_blank">http://192.168.1.3:8080&quot;，可以看到下面的页面</a>
+<img src="../assets/widget.png" width="100%"></p>
 </li>
-<li><p>打开DeekeScript的侧边栏，开启“无障碍”、“悬浮窗”权限</p>
-</li>
-<li><p>发送代码到手机（点击查看如何操作）</p>
-</li>
-<li><p>在Vscode中执行命令，让APP启动（或者在手机APP中点击“运行”）</p>
-</li>
-<li><p>手机中的APP已经出现了相应的界面，可以在手机中点击对应的功能进行运行</p>
+<li><p>选择左侧的控件，点击之后，就可以清楚地看到控件信息了</p>
 </li>
 </ul>
-<p></p><div id="gitalk-container"></div><script src="//cdn.staticfile.org/gitalk/1.8.0/gitalk.min.js"></script><script>window.onload = function() {gitbook.events.on("page.change", function() {var gitalk = new Gitalk({"clientID":"67bf08545b789c1522cd","clientSecret":"d04e46d41828ad4c8db0ddc9e4fa8ad785943260","repo":"deekeScriptDoc","owner":"miniphper","admin":["miniphper"],"id":"/quick/start.html"});gitalk.render("gitalk-container");});};var gitalk = new Gitalk({"clientID":"67bf08545b789c1522cd","clientSecret":"d04e46d41828ad4c8db0ddc9e4fa8ad785943260","repo":"deekeScriptDoc","owner":"miniphper","admin":["miniphper"],"id":"/quick/start.html"});gitalk.render("gitalk-container");</script> <p></p>
+<blockquote>
+<p>如果你需要看到更多的控件，可以选择“复杂模式”；有时候你可能不想打开vscode调试，你可以切换到“在线调试”进行功能调试</p>
+</blockquote>
+<h2 id="创建javascript项目">创建JavaScript项目</h2>
+<ul>
+<li><p>通过git获取基础代码</p>
+<pre class="language-"><code> git clone https://github.com/DeekeScript/deekeScriptDemo.git ./
+</code></pre></li>
+<li><p>打开Vscode代码编辑器，并且将刚刚克隆的项目打开，如下图：</p>
+<p><img src="../assets/vscode.png" width="100%"></p>
+</li>
+<li><p><a href="../config/vscode.html">同步项目到手机</a>，让APP启动</p>
+</li>
+<li><p>手机中的APP已经出现了相应的界面，可以在手机中点击对应的功能进行运行，大概如下图：</p>
+<p><img src="../assets/deeke.png" width="20%"></p>
+</li>
+</ul>
+<h2 id="创建typescript项目">创建TypeScript项目</h2>
+<ul>
+<li><p>通过git获取基础代码</p>
+<pre class="language-"><code>git clone https://github.com/DeekeScript/DeekeScript ./
+</code></pre></li>
+<li><p>打开Vscode代码编辑器，并且将刚刚克隆的项目打开，如下图：
+<img src="../assets/typescript.png" width="100%"></p>
+</li>
+<li><p>在当前文件夹下执行：</p>
+<pre class="language-"><code># 如果电脑没有安装nodejs，还需要安装nodejs
+# 如果执行下面的代码卡顿，注意将npm镜像设置为阿里云镜像
+npm install
+</code></pre></li>
+<li><p>编写Typescript代码</p>
+</li>
+<li><p>编译Typescript代码，如下图：
+<img src="../assets/build.png" width="100%"></p>
+</li>
+<li><p><a href="../config/vscode.html">同步项目到手机</a>，让APP启动</p>
+</li>
+<li><p>手机中的APP已经出现了相应的界面，可以在手机中点击对应的功能进行运行，大概如下图：</p>
+<p><img src="../assets/deeke.png" width="20%"></p>
+</li>
+</ul>
+<h2 id="单个javascript或者typescript调试">单个JavaScript或者Typescript调试</h2>
+<blockquote>
+<p>我不想创建项目，只想创建一个js或者ts文件，直接运行可以么？
+这样是可以的，目前DeekeScript只支持项目运行，vscode可以调试单个文件，操作如下：</p>
+</blockquote>
+<ul>
+<li>创建一个js文件，如：test.js</li>
+<li>点击右上角的“执行”图标即可</li>
+</ul>
+<blockquote>
+<p>如果是Typescript，则需要先执行编译动作，然后再进入项目的script文件夹下面的对应js文件下，执行上面的操作即可！</p>
+</blockquote>
 <footer class="page-footer"><span class="copyright">Copyright © script.deeke.top 2024 all right reserved，powered by Gitbook</span><span class="footer-modification">该文章修订时间：
-2024-04-03 09:51:31
+2025-03-10 10:14:30
 </span></footer>
                                 
                                 </section>
@@ -888,7 +952,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"快速开始","level":"1.3.3","depth":2,"next":{"title":"配置","level":"1.4","depth":1,"ref":"","articles":[{"title":"DeekeScript.json","level":"1.4.1","depth":2,"path":"config/config.md","ref":"./config/config.md","articles":[]},{"title":"Vscode开发篇","level":"1.4.2","depth":2,"path":"config/vscode.md","ref":"./config/vscode.md","articles":[]}]},"previous":{"title":"开发环境说明","level":"1.3.2","depth":2,"path":"quick/envir.md","ref":"./quick/envir.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gtalk","hints","-theme-creative","theme-comscore","-sidebar-ad","intopic-toc","sharing","exercises","@honkit/honkit-plugin-ga","sitemap","expandable-chapters","chapter-fold","hide-published-with","edit-link","echarts","copy-code-button","-highlight","prism","back-to-top-button","-lunr","-search","search-pro","-insert-logo","tbfed-pagefooter","livereload"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy script.deeke.top 2024","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"本章主要内容"},"livereload":{},"search-pro":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"hide-published-with":{},"myseo":{"titlePrefix":"DeekeScript","titleSuffix":"DeekeScript","description":"DeekeScript是一款基于Android无障碍的自动化脚本开发和打包软件。通过DeekeScript提供的接口，可以模拟用户操作、控制Android手机的APP（框架）。并且DeekeScript提供UI支持、接口支持和SaaS卡密系统支持，开发者只需关注业务逻辑。","keywords":"DeekeScript,Deeke,按键控制,模拟点击,模拟输入,自动化,脚本,SaaS系统,Android自动化,卡密系统,自动化框架"},"fontsettings":{"theme":"white","family":"sans","size":2},"gtalk":{"clientID":"67bf08545b789c1522cd","clientSecret":"d04e46d41828ad4c8db0ddc9e4fa8ad785943260","repo":"deekeScriptDoc","owner":"miniphper","admin":["miniphper"]},"_sidebar-ad":{"imageUrl":"/weixin.png","url":"/weixin.png","description":"<div style='line-height:28px;margin-top:-12px;color: #777777;'>你有好的建议？<br/>想寻求技术支持？<br/>请扫码添加微信<br/>添加时请注明来意~</div>"},"sitemap":{"hostname":"https://script.deeke.top/"},"theme-comscore":{},"back-to-top-button":{},"@honkit/honkit-plugin-ga":{},"copy-code-button":{},"ga":{"trackingID":"G-00000000","anonymizeIP":true},"echarts":{},"exercises":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":true,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"在线编辑","base":"https://github.com/miniphper/deekScriptDocument"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chart":{},"insert-logo":{"url":"","style":"background: none;"},"expandable-chapters":{}},"copyright":"DeekeScript","theme":"default","keywords":"DeekeScript, 嘀客, Deeke","author":"miniphper","published":"04/12/2024","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"DeekeScript","language":"zh-hans","website":"https://doc.deeke.top/","gitbook":"*","description":"描述"},"file":{"path":"quick/start.md","mtime":"2024-04-03T01:51:31.190Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-04-03T02:19:28.908Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"快速开始","level":"1.3.3","depth":2,"next":{"title":"配置","level":"1.4","depth":1,"ref":"","articles":[{"title":"DeekeScript.json","level":"1.4.1","depth":2,"path":"config/config.md","ref":"./config/config.md","articles":[]},{"title":"Vscode开发篇","level":"1.4.2","depth":2,"path":"config/vscode.md","ref":"./config/vscode.md","articles":[]}]},"previous":{"title":"开发环境说明","level":"1.3.2","depth":2,"path":"quick/envir.md","ref":"./quick/envir.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hints","-theme-creative","theme-comscore","-sidebar-ad","intopic-toc","sharing","exercises","sitemap","expandable-chapters","chapter-fold","hide-published-with","edit-link","echarts","copy-code-button","-highlight","prism","back-to-top-button","-lunr","-search","search-pro","-insert-logo","tbfed-pagefooter"],"root":"./docs","styles":{"website":"main.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy script.deeke.top 2024","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"本章主要内容"},"search-pro":{},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"hide-published-with":{},"myseo":{"titlePrefix":"DeekeScript","titleSuffix":"DeekeScript","description":"DeekeScript是一款基于Android无障碍的自动化脚本开发和打包软件。通过DeekeScript提供的接口，可以模拟用户操作、控制Android手机的APP（框架）。并且DeekeScript提供UI支持、接口支持和SaaS卡密系统支持，开发者只需关注业务逻辑。","keywords":"DeekeScript,Deeke,按键控制,模拟点击,模拟输入,自动化,脚本,SaaS系统,Android自动化,卡密系统,自动化框架"},"fontsettings":{"theme":"white","family":"sans","size":2},"_sidebar-ad":{"imageUrl":"/weixin.png","url":"/weixin.png","description":"<div style='line-height:28px;margin-top:-12px;color: #777777;'>你有好的建议？<br/>想寻求技术支持？<br/>请扫码添加微信<br/>添加时请注明来意~</div>"},"sitemap":{"hostname":"https://doc.deeke.cn/"},"theme-comscore":{},"back-to-top-button":{},"copy-code-button":{},"ga":{"trackingID":"G-00000000","anonymizeIP":true},"echarts":{},"exercises":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":true,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"edit-link":{"label":"在线编辑","base":"https://github.com/DeekeScript/deekeScriptDoc"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chart":{},"insert-logo":{"url":"","style":"background: none;"},"expandable-chapters":{}},"copyright":"DeekeScript","theme":"default","keywords":"DeekeScript, 嘀客, Deeke","author":"DeekeScript","published":"04/12/2024","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"DeekeScript","language":"zh-hans","website":"https://doc.deeke.cn/","gitbook":"*","description":"描述"},"file":{"path":"quick/start.md","mtime":"2025-03-10T02:14:30.244Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-03-10T02:42:06.748Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -976,10 +1040,6 @@
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-ga/plugin.js"></script>
-        
-    
-        
         <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
         
     
@@ -1009,10 +1069,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
